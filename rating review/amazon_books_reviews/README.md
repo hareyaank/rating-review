@@ -2,11 +2,10 @@
 
 Given a text review, can we guess, from 1 to 5 stars, which is the score of the review? We certainly can estimate it roughly.
 
-I downloaded from the [Amazon Review Data (2018)](https://nijianmo.github.io/amazon/index.html) the small book subset to perform this exercise. I created a MongoDB collection for this dataset and designed an exercise for learning purposes.
+I downloaded from the [Amazon Review Data (2018)] the small book subset to perform this exercise. I created a MongoDB collection for this dataset and designed an exercise for learning purposes.
 
 The objective then is, converting each review to [TF-IDF vectors](https://towardsdatascience.com/tf-idf-for-document-ranking-from-scratch-in-python-on-real-world-dataset-796d339a4089) and to use a Machine Learning algorithm using these features to predict the numeric rating of the review.
 
-![Photo: Alan Tansey, https://www.detail-online.com/blog-article/a-home-for-books-and-youngsters-childrens-library-by-mkca-33583/](https://www.detail-online.com/fileadmin/uploads/04-Blog/MKCA_Concourse_House-teaser-gross.jpg)
 
 The "small" book review dataset consists of 27,164,983 reviews. Stored it in a MongoDB collection, and using `pymongo` I loaded a random subset of reviews. This is because I am working with a laptop and hence I can't work with massive datasets.
 
